@@ -17,13 +17,13 @@
                 {% endif %}
             </div>
             <div class="share-buttons">
-                <button class="btn btn-sm btn-outline-secondary" onclick="shareArticle('facebook')">
+                <button class="btn btn-sm btn-outline-secondary" onclick="shareArticle('facebook','{{ artikel.payload.title|title }}')">
                     <i class="fab fa-facebook"></i>
                 </button>
-                <button class="btn btn-sm btn-outline-info" onclick="shareArticle('twitter')">
+                <button class="btn btn-sm btn-outline-info" onclick="shareArticle('twitter','{{ artikel.payload.title|title }}')">
                     <i class="fab fa-twitter"></i>
                 </button>
-                <button class="btn btn-sm btn-outline-danger" onclick="shareArticle('whatsapp', 'Artikel cinta geli lama lama cinta')">
+                <button class="btn btn-sm btn-outline-danger" onclick="shareArticle('whatsapp', '{{ artikel.payload.title|title }}')">
                     <i class="fab fa-whatsapp"></i>
                 </button>
             </div>

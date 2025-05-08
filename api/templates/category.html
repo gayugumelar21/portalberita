@@ -1,13 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Category Artikel{% endblock %}
+{% block title %}{{title}}{% endblock %}
 
 {% block content %}
 <!-- Main Content Area -->
 <div class="col-lg-8">
     <!-- Category Header -->
     <div class="category-header mb-4">
-        <h1 class="mb-3">Kategori: Politik</h1>
-        <p class="text-muted">Menampilkan 15 artikel dalam kategori Politik</p>
+        <h1 class="mb-3">{{title}}</h1>
     </div>
 
     <!-- News List -->
@@ -31,6 +30,7 @@
     </div>
 
     <!-- Pagination -->
+    {% if artikel.payload.artikel|length > 0 %}
     <nav aria-label="Page navigation" class="mt-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <small class="text-muted">Halaman {{ artikel.payload.pagination.halaman_sekarang }} dari {{
@@ -39,7 +39,6 @@
         </div>
         <ul class="pagination justify-content-center">
         
-
             {% set current_page = artikel.payload.pagination.halaman_sekarang %}
             {% set total_pages = artikel.payload.pagination.total_halaman %}
 
@@ -72,5 +71,6 @@
 
         </ul>
     </nav>
+    {% endif %}
 </div>
 {% endblock %}
