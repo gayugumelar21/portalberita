@@ -12,7 +12,7 @@ class ArtikelAPI:
         """
         self._sheet_id = ''
         self._gid = ''
-        self.base_url = "https://backend-teknopedia-new.vercel.app"
+        self.base_url = "https://backend-sheet-opensource.vercel.app/"
 
 
     def sheet_id(self, value):
