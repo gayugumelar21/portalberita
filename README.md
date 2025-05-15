@@ -20,6 +20,18 @@ vercel dev
 ```
 Your Flask application is now available at `http://localhost:3000`.
 
+### Change your Google Spreadsheet Credential
+- Open `api/index.py`
+- Replace this part with your credentials
+```
+config_artikel = ArtikelAPI()
+config_artikel.sheet_id('your-sheet-id')
+config_artikel.gid('your-google-spreadsheet-gid')
+```
+
+### Spreadsheet Template
+Make sure your spreadsheet follows this template: [here](https://docs.google.com/spreadsheets/d/17-WZdi-S27wCUdxuAtvR3j2564WIbx9Nwz45EbmxCyM/edit?gid=71052)
+
 ## One-Click Deploy
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
