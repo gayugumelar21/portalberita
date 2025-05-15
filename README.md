@@ -13,12 +13,18 @@ https://flask-python-template.vercel.app/
 This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
 
 ## Running Locally
+- It is recommended to set up a virtual environment locally
+- Activate your virtualenv `source venv/bin/activate`
+- Install Python dependencies using the following command: `pip install -r requirements.txt`
+- Run dev `python api/index.py`. The app will run on port `http://localhost:5000`
 
+Another way to run the development server using Vercel
+- Make sure you have a Vercel account
+- Then, run the following commands:
 ```bash
 npm i -g vercel
 vercel dev
 ```
-
 Your Flask application is now available at `http://localhost:3000`.
 
 ## One-Click Deploy
