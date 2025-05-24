@@ -1,5 +1,5 @@
-# Puingberita
-Puingberita is simple blog build from Flask + Google Spreadsheet. This project support deploy using Vercel.
+# Portalberita
+Portalberita is simple blog build from Flask + Google Spreadsheet. This project support deploy using Vercel.
 
 ## How it Works
 
