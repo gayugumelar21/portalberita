@@ -132,7 +132,7 @@ config_artikel = ArtikelAPI()
 config_artikel.sheet_id('1WVxd4gkGlLRFS2VmGyITJfu2tUrukvxEDD1pvpVvts8')
 config_artikel.gid('0')
 
-
+# testing
 @app.route('/')
 def home():
     page = request.args.get('page', 1, type=int)
